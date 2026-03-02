@@ -90,8 +90,8 @@ nav ul li ul li a{
     padding:12px;
 }
 
-/* HERO */
-.hero{
+/* CAJA */
+.caja{
     background:url("../Imagen/Imagen3.webp") no-repeat center center/cover;
     height:500px;
     display:flex;
@@ -100,7 +100,7 @@ nav ul li ul li a{
     text-align:center;
 }
 
-.hero h2{
+.caja h2{
     background:rgba(114, 121, 219, 0.521);
     padding:20px;
     border-radius:10px;
