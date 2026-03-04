@@ -159,6 +159,7 @@ table, th, td {
   border-collapse: collapse;
   text-align: center;
   color: #1e293b;
+  padding: 10px;
 }
 th, td {
   background-color: #96D4D4;
