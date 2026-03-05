@@ -174,3 +174,27 @@ table
     color: #2aa2c7;
     margin-top: 40px;
 }
+
+/*Botón "Volver arriba"*/
+/* BOTÓN VOLVER ARRIBA */
+#btnArriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #60a5fa;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+#btnArriba:hover {
+    background-color: #1e40af;
+    transform: scale(1.1);
+}

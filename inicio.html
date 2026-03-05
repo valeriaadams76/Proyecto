@@ -19,7 +19,7 @@
         <li><a href="./inicio.html">Inicio</a></li>
 
         <li>
-            <a href="#">Aulas</a>
+            <a href="./Aula/aulas.html">Aulas</a>
             <ul>
                 <li><a href="./Aula/aula1.html">Aula 1</a></li>
                 <li><a href="./Aula/aula2.html">Aula 2</a></li>
@@ -37,8 +37,26 @@
                 <li><a href="#">Oficina 2</a></li>
             </ul>
         </li>
+        <li>
+            <a href="#">Wi-Fi</a>
+            <ul>
+                <li><a href="#">Plato 1</a></li>
+                <li><a href="#">Plato 2</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
+<section class="contenido">
+    <h2>Buscador Global de Aulas</h2>
+
+    <input type="text" id="busquedaGlobal" 
+           placeholder="Buscar PC, modelo, procesador..."
+           style="padding:10px; width:350px;">
+
+    <div id="resultados" style="margin-top:20px;"></div>
+</section>
+
+<script src="./js/buscador.js"></script>
 
 <section class="caja">
     <h2>Bienvenido a mi Proyecto de Prácticas</h2>
@@ -55,9 +73,19 @@
     <img src="Imagen/Imagen2.webp" alt="img">
 </section>
 
+
 <footer>
-    <p>&copy; 2026 Proyecto de Prácticas | Desarrollado por Valeria Ossa Morales</p>
+    <p>
+        &copy; <span id="anio"></span> Proyecto de Prácticas | 
+        Desarrollado por Valeria Ossa Morales
+    </p>
+    <p id="fechaHora"></p>
 </footer>
+
+<button id="btnArriba">⬆</button>
+
+<script src="./js/global.js"></script>
+<script src="./js/fechaHora.js"></script>
 
 </body>
 </html>
