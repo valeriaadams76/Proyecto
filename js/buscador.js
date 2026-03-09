@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         filtrados.forEach(item => {
             const div = document.createElement("div");
-            div.style.background = "#1e40af";
+            div.style.background = "#d89128";
             div.style.padding = "10px";
             div.style.margin = "10px 0";
             div.style.borderRadius = "8px";

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto de Prácticas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- ICONOS REDES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Proyecto de Prácticas</h1>
+        <p>Desarrollo Aplicaciones Web (DAW) - 2026</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../inicio.html">Inicio</a></li>
+
+            <li>
+                <a href="./aula.html">Aulas</a>
+                <ul>
+                    <li><a href="./aula1.html">Aula 1</a></li>
+                    <li><a href="./aula2.html">Aula 2</a></li>
+                    <li><a href="./aula3.html">Aula 3</a></li>
+                    <li><a href="./aula4.html">Aula 4</a></li>
+                    <li><a href="./aula5.html">Aula 5</a></li>
+                    <li><a href="./aula6.html">Aula 6</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Oficina</a>
+                <ul>
+                    <li><a href="#">Oficina 1</a></li>
+                    <li><a href="#">Oficina 2</a></li>
+                </ul>
+            </li>
+        <li>
+            <a href="#">Wi-Fi</a>
+            <ul>
+                <li><a href="#">Plato 1</a></li>
+                <li><a href="#">Plato 2</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+
+    <section class="buscador">
+
+        <div class="buscador-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="busquedaGlobal" placeholder="Buscar PC, modelo o procesador...">
+        </div>
+
+        <div id="resultados"></div>
+
+    </section>
+
+    <!-- CRUD -->
+
+    <section class="tabla-contenedor">
+
+        <h2>Gestión de Ordenadores</h2>
+
+        <div class="formulario-pc">
+            <input type="text" id="PC" placeholder="PC">
+            <input type="text" id="Nombre" placeholder="Nombre">
+            <input type="text" id="modelo" placeholder="Modelo">
+            <input type="text" id="procesador" placeholder="Procesador">
+            <input type="text" id="Velocidad" placeholder="Velocidad">
+            <input type="text" id="ram" placeholder="Memoria RAM">
+            <input type="text" id="tarjetaGrafica" placeholder="Tarjeta Gráfica">
+            <input type="text" id="disco" placeholder="Disco Duro">
+            <input type="text" id="modeloWindows" placeholder="Modelo Windows">            <input type="text" id="Microsoft" placeholder="Microsoft Office">
+            <input type="text" id="LibreOffice" placeholder="LibreOffice">
+            <button id="btnAgregar">Añadir PC</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>PC</th>
+                    <th>Nombre</th>
+                    <th>Modelo</th>
+                    <th>Procesador</th>
+                    <th>Velocidad</th>
+                    <th>Memoria RAM</th>
+                    <th>Tarjeta Gráfica</th>
+                    <th>Disco Duro</th>
+                    <th>Modelo Windows</th>
+                    <th>Microsoft Office</th>
+                    <th>LibreOffice</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaPCs"></tbody>
+
+        </table>
+
+    </section>
+
+
+    <footer>
+
+        <p>📍 C. Pilar, 6, 41018 Sevilla</p>
+        <p>📞 900 051 912</p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/adamsformacion/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ADAMSformacion"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/Adamsformacion" class="x"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/@adamsformacion" class="tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCWfyYcB9FRupStDfa593IzA" class="youtube"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+        </div>
+
+        <p>&copy; <span id="anio"></span> Proyecto DAW - Valeria Ossa Morales</p>
+        <p id="fechaHora"></p>
+
+    </footer>
+
+    <button id="btnArriba">⬆</button>
+
+    <script src="../js/botonArriba.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/buscador.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/añadir.js"></script>
+</body>
+
+</html>

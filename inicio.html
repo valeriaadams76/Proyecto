@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Proyecto de Prácticas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- ICONOS REDES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<header>
-    <h1>Proyecto de Prácticas</h1>
-    <p>Desarrollo Aplicaciones Web (DAW) - 2026</p>
-</header>
+    <header>
+        <h1>Proyecto de Prácticas</h1>
+        <p>Desarrollo Aplicaciones Web (DAW) - 2026</p>
+    </header>
 
 <nav>
     <ul>
         <li><a href="./inicio.html">Inicio</a></li>
 
         <li>
-            <a href="./Aula/aulas.html">Aulas</a>
+            <a href="./Aula/aula.html">Aulas</a>
             <ul>
                 <li><a href="./Aula/aula1.html">Aula 1</a></li>
                 <li><a href="./Aula/aula2.html">Aula 2</a></li>
@@ -46,46 +52,76 @@
         </li>
     </ul>
 </nav>
-<section class="contenido">
-    <h2>Buscador Global de Aulas</h2>
-
-    <input type="text" id="busquedaGlobal" 
-           placeholder="Buscar PC, modelo, procesador..."
-           style="padding:10px; width:350px;">
-
-    <div id="resultados" style="margin-top:20px;"></div>
-</section>
-
-<script src="./js/buscador.js"></script>
-
-<section class="caja">
-    <h2>Bienvenido a mi Proyecto de Prácticas</h2>
-</section>
-
-<section class="contenido">
-    <h2>Sobre este Proyecto</h2>
-    <p>
-        Esta página web representa la portada oficial del proyecto de prácticas. 
-        Aquí se muestra información sobre cada una de las cosas que he hecho durante la práctica.
-    </p>
-
-    <img src="Imagen/Imagen1.jpg" alt="img">
-    <img src="Imagen/Imagen2.webp" alt="img">
-</section>
 
 
-<footer>
-    <p>
-        &copy; <span id="anio"></span> Proyecto de Prácticas | 
-        Desarrollado por Valeria Ossa Morales
-    </p>
-    <p id="fechaHora"></p>
-</footer>
+    <!-- BUSCADOR PRO -->
 
-<button id="btnArriba">⬆</button>
+    <section class="buscador">
 
-<script src="./js/global.js"></script>
-<script src="./js/fechaHora.js"></script>
+        <div class="buscador-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="busquedaGlobal" placeholder="Buscar PC, modelo o procesador...">
+        </div>
 
+        <div id="resultados"></div>
+
+    </section>
+
+    <!-- CARRUSEL PRO -->
+
+    <section class="carrusel">
+
+        <div class="slider">
+
+            <div class="slides">
+                <img src="./Imagen/imagen1.webp" class="slide">
+                <img src="./Imagen/Imagen2.webp" class="slide">
+                <img src="./Imagen/imagen3.webp" class="slide">
+                <img src="./Imagen/imagen4.webp" class="slide">
+                <img src="./Imagen/imagen5.webp" class="slide">
+                
+            </div>
+
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+
+        </div>
+
+    </section>
+
+    <section class="contenido fade-in">
+        <h2>Bienvenido</h2>
+        <p>Proyecto profesional de gestión de aulas.</p>
+    </section>
+    <footer>
+
+        <p>📍 C. Pilar, 6, 41018 Sevilla</p>
+        <p>📞 900 051 912</p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/adamsformacion/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ADAMSformacion"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/Adamsformacion" class="x"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/@adamsformacion" class="tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCWfyYcB9FRupStDfa593IzA" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+</div>
+        </div>
+
+        <p>&copy; <span id="anio"></span> Proyecto DAW - Valeria Ossa Morales</p>
+        <p id="fechaHora"></p>
+
+    </footer>
+
+    <button id="btnArriba">⬆</button>
+
+    <script src="./js/botonArriba.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/buscador.js"></script>
+    <script src="./js/global.js"></script>
+    <script>
+</script>
 </body>
+
 </html>

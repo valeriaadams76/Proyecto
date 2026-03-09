@@ -6,6 +6,9 @@
     <title>Proyecto de Prácticas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- ICONOS REDES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -20,7 +23,7 @@
             <li><a href="../inicio.html">Inicio</a></li>
 
             <li>
-                <a href="#">Aulas</a>
+                <a href="./aula.html">Aulas</a>
                 <ul>
                     <li><a href="./aula1.html">Aula 1</a></li>
                     <li><a href="./aula2.html">Aula 2</a></li>
@@ -38,63 +41,316 @@
                     <li><a href="#">Oficina 2</a></li>
                 </ul>
             </li>
+        <li>
+            <a href="#">Wi-Fi</a>
+            <ul>
+                <li><a href="#">Plato 1</a></li>
+                <li><a href="#">Plato 2</a></li>
+            </ul>
+        </li>
         </ul>
     </nav>
 
-<section class="titulo">
+    <section class="buscador">
+
+        <div class="buscador-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="busquedaGlobal" placeholder="Buscar PC, modelo o procesador...">
+        </div>
+
+        <div id="resultados"></div>
+
+    </section>
+
+<!-- HERO AULA -->
+
+<section class="aula-hero">
     <h1>AULA 5</h1>
-</section> 
+    <p>Información completa de los equipos informáticos</p>
+</section>
 
-    <table style="width:90%">
-        <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>jjj</td>
+<!-- TARJETAS RESUMEN -->
 
-        </tr>
-        <tr>
-            <td>3</td>
+<section class="stats">
 
-        </tr>
-        <tr>
-            <td>4</td>
+<div class="card">
+    <h3>15</h3>
+    <p>Ordenadores</p>
+</div>
 
-        </tr>
-        <tr>
-            <td>5</td>
+<div class="card">
+    <h3>i5</h3>
+    <p>Procesadores</p>
+</div>
 
-        </tr>
-        <tr>
-            <td>6</td>
+<div class="card">
+    <h3>8GB - 16GB</h3>
+    <p>Memoria RAM</p>
+</div>
 
+</section>
+
+<!-- TABLA MODERNA -->
+
+<section class="tabla-contenedor">
+
+<table>
+    <thead>
+        <tr>
+            <th>PC</th>
+            <th>Nombre</th>
+            <th>Modelo</th>
+            <th>Procesador</th>
+            <th>Velocidad</th>
+            <th>Memoria RAM</th>
+            <th>Tarjeta Gráfica</th>
+            <th>Disco Duro</th>
+            <th>Modelo Windows</th>
+            <th>Microsoft Office</th>
+            <th>LibreOffice</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>PC Profesor</td>
+            <td>AULA05MASTER</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>25.8.3.2</td>
         </tr>
         <tr>
-            <td>7</td>
+            <td>PC 1</td>
+            <td>AULA05PILAR01</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>25.8.1.1</td>
         </tr>
         <tr>
-            <td>8</td>
+            <td>PC 2</td>
+            <td>AULA05PILAR02</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-8500</td>
+            <td>3.00 GHz</td>
+            <td>8,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>25.8.3.2</td>
         </tr>
         <tr>
-            <td>9</td>
+            <td>PC 3</td>
+            <td>AULA05PILAR03</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>118 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>28.8.3.2</td>
         </tr>
         <tr>
-            <td>10</td>
+            <td>PC 4</td>
+            <td>AULA05PILAR04</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>28.8.2.2</td>
         </tr>
-    </table>
+        <tr>
+            <td>PC 5</td>
+            <td>AULA05PILAR05</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>25.8.0.4</td>
+        </tr>
+        <tr>
+            <td>PC 6</td>
+            <td>AULA05PILAR06</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.6.7.2</td>
+        </tr>
+        <tr>
+            <td>PC 7</td>
+            <td>AULA05PILAR07</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.3.0.3</td>
+        </tr>
+        <tr>
+            <td>PC 8</td>
+            <td>AULA05PILAR08</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.6.7.2</td>
+        </tr>
+        <tr>
+            <td>PC 9</td>
+            <td>AULA05PILAR09</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.3.0.3</td>
+        </tr>
+        <tr>
+            <td>PC 10</td>
+            <td>AULA05PILAR10</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.3.0.3</td>
+        </tr>
+        <tr>
+            <td>PC 11</td>
+            <td>AULA05PILAR11</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 10 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.6.7.2</td>
+        </tr>
+        <tr>
+            <td>PC 12</td>
+            <td>AULA05PILAR12</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.6.7.2</td>
+        </tr>
+        <tr>
+            <td>PC 13</td>
+            <td>AULA05PILAR13</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.6.7.2</td>
+        </tr>
+        <tr>
+            <td>PC 14</td>
+            <td>AULA05PILAR14</td>
+            <td>HP ProDesk 400 G6</td>
+            <td>Intel Core i5-9500</td>
+            <td>3.00 GHz</td>
+            <td>8,00 GB</td>
+            <td>128 MB</td>
+            <td>236 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.2.0.2</td>
+        </tr>
+        <tr>
+            <td>PC 15</td>
+            <td>AULA05PILAR15</td>
+            <td>HP ProDesk 400 G7</td>
+            <td>Intel Core i5-10500</td>
+            <td>3.10 GHz</td>
+            <td>16,00 GB</td>
+            <td>128 MB</td>
+            <td>475 GB</td>
+            <td>Windows 11 Pro</td>
+            <td>Profesional Plus 2021</td>
+            <td>7.6.7.2</td>
+        </tr>
+    </tbody>
+</table>
+
+</section>
 
     <footer>
-        <p>&copy; 2026 Proyecto de Prácticas | Desarrollado por Valeria Ossa Morales</p>
+
+        <p>📍 C. Pilar, 6, 41018 Sevilla</p>
+        <p>📞 900 051 912</p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/adamsformacion/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ADAMSformacion"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/Adamsformacion" class="x"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/@adamsformacion" class="tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCWfyYcB9FRupStDfa593IzA" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+</div>
+        </div>
+
+        <p>&copy; <span id="anio"></span> Proyecto DAW - Valeria Ossa Morales</p>
+        <p id="fechaHora"></p>
+
     </footer>
 
+    <button id="btnArriba">⬆</button>
+
+    <script src="../js/botonArriba.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/buscador.js"></script>
+    <script src="../js/global.js"></script>
 </body>
 
 </html>
